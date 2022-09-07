@@ -49,12 +49,14 @@ export const CardProject = styled.div`
     font-size: 1.125rem;
     color: ${(props) => props.theme.ligh};
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   footer {
     margin-top: 2rem;
     width: 100%;
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 
     button {
       flex: 1;
