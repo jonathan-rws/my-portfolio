@@ -13,6 +13,7 @@ export const SlideContainer = styled.div`
   height: 10rem;
   background: ${(props) => props.theme.dark};
   overflow: hidden;
+  margin-top: 1rem;
 `
 
 export const Marquee = styled.div`

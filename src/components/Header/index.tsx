@@ -1,3 +1,5 @@
+import { List } from 'phosphor-react'
+
 import { HeaderContainer, HeaderContent } from './styles'
 
 export function Header() {
@@ -13,6 +15,9 @@ export function Header() {
           <a href="">Projetos</a>
           <a href="">Contato</a>
         </nav>
+        <button>
+          <List weight="bold" size={26} />
+        </button>
       </HeaderContent>
     </HeaderContainer>
   )

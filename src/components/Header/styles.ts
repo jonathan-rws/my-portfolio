@@ -13,10 +13,20 @@ export const HeaderContent = styled.div`
   width: 70rem;
   padding: 1rem 2rem;
   justify-content: space-between;
+  align-items: center;
   strong {
     font-size: 1.5rem;
     font-weight: 700;
     color: ${(props) => props.theme.primary};
+  }
+  button {
+    background: transparent;
+    border: none;
+    color: ${(props) => props.theme.ligh};
+    cursor: pointer;
+    @media (min-width: 720px) {
+      display: none;
+    }
   }
   nav {
     display: flex;
@@ -42,5 +52,11 @@ export const HeaderContent = styled.div`
         color: ${(props) => props.theme.primary};
       }
     }
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+  @media (max-width: 720px) {
+    padding: 1rem 1rem;
   }
 `

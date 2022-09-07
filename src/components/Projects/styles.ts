@@ -17,6 +17,9 @@ export const ProjectsContainer = styled.section`
     text-align: justify;
     font-size: 1.125rem;
     margin-top: 1rem;
+    @media (max-width: 720px) {
+      font-size: 1rem;
+    }
   }
 `
 export const ProjectsWrapper = styled.div`
@@ -24,6 +27,10 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const CardProject = styled.div`

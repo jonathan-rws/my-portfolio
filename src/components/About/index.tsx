@@ -20,10 +20,11 @@ export function About() {
       </p>
       <ExperienceTimeContainer>
         <strong>12+</strong>
-        <span>
+        <p>
           Meses de estudo. Buscando se especializar em Javascript, Html e CSS
-          para poder criar interfaces dinâmicas e intuitivas.
-        </span>
+          para poder criar interfaces dinâmicas e intuitivas. Abaixo você
+          encontra as principais escolas que ja estudei.
+        </p>
       </ExperienceTimeContainer>
       <CerticatesContainer>
         <div>
