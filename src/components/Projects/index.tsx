@@ -2,6 +2,7 @@ import { CardProject, ProjectsContainer, ProjectsWrapper } from './styles'
 
 import coffeeDeliveryImg from '../../assets/projects/coffee-delivery.png'
 import portfolioImg from '../../assets/projects/portfolio.png'
+import todoImg from '../../assets/projects/todo.png'
 
 export function Projects() {
   return (
@@ -37,11 +38,11 @@ export function Projects() {
           </footer>
         </CardProject>
         <CardProject>
-          <img src="https://github.com/jonathan-rws.png" alt="" />
-          <strong>coffee-delivery</strong>
+          <img src={todoImg} alt="" />
+          <strong>Todo List</strong>
           <span>
-            Aplicação web para delivery de cafés, com carrinho de compras e
-            cadastro de endereços.
+            Ferramenta desenvolvida em react para salvar tarefas e marcar como
+            concluída quando efetuada.
           </span>
           <footer>
             <button>Live</button>
