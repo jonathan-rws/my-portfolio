@@ -25,16 +25,16 @@ export function About() {
       </ExperienceTimeContainer>
 
       <CerticatesContainer>
-        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+        <Fade duration={2500} fraction={0.8} triggerOnce={true}>
           <Certificate certificate={'rocketseat'}></Certificate>
         </Fade>
-        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+        <Fade duration={2500} fraction={0.8} triggerOnce={true}>
           <Certificate certificate={'sujeitoProgramador'}></Certificate>
         </Fade>
-        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+        <Fade duration={2500} fraction={0.8} triggerOnce={true}>
           <Certificate certificate={'cursoEmVideo'}></Certificate>
         </Fade>
-        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+        <Fade duration={2500} fraction={0.8} triggerOnce={true}>
           <Certificate certificate={'comingSoon'}></Certificate>
         </Fade>
       </CerticatesContainer>

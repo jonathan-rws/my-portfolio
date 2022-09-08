@@ -2,7 +2,7 @@ export const darkTheme = {
   background: '#1A1A29',
   white: '#FFFFFF',
   ligh: '#F5F5F5',
-  low: '#848191',
+  low: '#8C8C94',
   primary: '#7562E0',
   secondary: '#282162',
   dark: '#181824',

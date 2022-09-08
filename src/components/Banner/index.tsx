@@ -1,6 +1,6 @@
 import developerImg from '../../assets/developer.svg'
 import { AsideContainer, BannerContainer, Button } from './styles'
-import { Article, User } from 'phosphor-react'
+import { FaDev, FaUser } from 'react-icons/fa'
 
 export function Banner() {
   return (
@@ -11,11 +11,11 @@ export function Banner() {
         <p>Estudante de desenvolvimento web front-end</p>
         <div>
           <Button>
-            <User weight="bold" size={22} />
+            <FaUser size={20} />
             Sobre
           </Button>
           <Button>
-            <Article size={22} weight="bold" />
+            <FaDev size={20} />
             Projetos
           </Button>
         </div>

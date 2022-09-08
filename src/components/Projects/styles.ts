@@ -68,6 +68,10 @@ export const CardProject = styled.div`
 
     button {
       flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       height: 3rem;
       border-radius: 8px;
       background: ${(props) => props.theme.primary};

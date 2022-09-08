@@ -44,7 +44,7 @@ export const ExperienceTimeContainer = styled.div`
     }
   }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: ${(props) => props.theme.ligh};
     @media (max-width: 720px) {
       font-size: 1rem;
