@@ -39,6 +39,7 @@ export const CardProject = styled.div`
   padding: 1rem;
   background: ${(props) => props.theme.label};
   border-radius: 8px;
+  height: 100%;
   img {
     border-radius: 8px;
     width: 100%;

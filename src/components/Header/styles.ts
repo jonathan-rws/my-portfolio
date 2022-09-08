@@ -40,6 +40,7 @@ export const HeaderContent = styled.div`
       transition: color 0.2s;
       border: 1px solid transparent;
       line-height: 2rem;
+
       &.active {
         color: ${(props) => props.theme.primary};
         border-bottom-color: ${(props) => props.theme.primary};

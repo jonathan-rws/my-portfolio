@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+import rocketseatImg from '../../assets/rocketseat.jpg'
+import sujeitoProgramadorImg from '../../assets/sujeito.png'
+import curoEmVideoImg from '../../assets/cursoEmVideo.png'
+import comingSoonimg from '../../assets/comingSoon.webp'
+
 export const AboutContainer = styled.section`
   margin-top: 3rem;
   h1 {
@@ -23,20 +28,19 @@ export const ExperienceTimeContainer = styled.div`
   display: flex;
   align-items: flex-start;
   margin-top: 1.5rem;
-  @media (max-width: 720px) {
-    display: inline;
-  }
+  display: inline;
+
   strong {
+    float: left;
     font-size: 6rem;
     font-weight: 600;
     line-height: 6rem;
     color: ${(props) => props.theme.primary};
     margin-right: 1.5rem;
     @media (max-width: 720px) {
-      float: left;
-      font-size: 5rem;
+      font-size: 4rem;
       margin-right: 1rem;
-      line-height: 4.5rem;
+      line-height: 4rem;
     }
   }
   p {
@@ -49,7 +53,6 @@ export const ExperienceTimeContainer = styled.div`
 `
 export const CerticatesContainer = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -58,23 +61,43 @@ export const CerticatesContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   div {
-    background: ${(props) => props.theme.secondary};
-    max-height: 9rem;
-
     flex: 1;
-    overflow: hidden;
-    border-radius: 8px;
-    @media (max-width: 1080px) {
-      max-height: 8rem;
-    }
-    @media (max-width: 720px) {
-      max-height: 7.5rem;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-    }
+  }
+`
+interface CertificateProps {
+  certificate:
+    | 'rocketseat'
+    | 'sujeitoProgramador'
+    | 'cursoEmVideo'
+    | 'comingSoon'
+}
+
+const backgroundImg = {
+  rocketseat: rocketseatImg,
+  sujeitoProgramador: sujeitoProgramadorImg,
+  cursoEmVideo: curoEmVideoImg,
+  comingSoon: comingSoonimg,
+}
+
+export const Certificate = styled.div<CertificateProps>`
+  display: flex;
+  border-radius: 8px;
+  background: url(${(props) => backgroundImg[props.certificate]});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  &::before {
+    content: '';
+    height: 0;
+    float: left;
+    padding-bottom: calc(100% / (16 / 10));
+  }
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
   }
 `

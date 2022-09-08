@@ -8,7 +8,6 @@ export const BannerContainer = styled.div`
   flex-direction: row;
   img {
     width: 27rem;
-
     @media (max-width: 1080px) {
       width: 19rem;
     }

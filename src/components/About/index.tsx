@@ -1,13 +1,10 @@
+import { Fade } from 'react-awesome-reveal'
 import {
   AboutContainer,
   CerticatesContainer,
+  Certificate,
   ExperienceTimeContainer,
 } from './styles'
-
-import rocketseatImg from '../../assets/rocketseat.jpg'
-import sujeitoProgramadorImg from '../../assets/sujeito.png'
-import curoEmVideoImg from '../../assets/cursoEmVideo.png'
-import comingSoonimg from '../../assets/comingSoon.svg'
 
 export function About() {
   return (
@@ -26,19 +23,20 @@ export function About() {
           encontra as principais escolas que ja estudei.
         </p>
       </ExperienceTimeContainer>
+
       <CerticatesContainer>
-        <div>
-          <img src={rocketseatImg} alt="" />
-        </div>
-        <div>
-          <img src={sujeitoProgramadorImg} alt="" />
-        </div>
-        <div>
-          <img src={curoEmVideoImg} alt="" />
-        </div>
-        <div>
-          <img src={comingSoonimg} alt="" />
-        </div>
+        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+          <Certificate certificate={'rocketseat'}></Certificate>
+        </Fade>
+        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+          <Certificate certificate={'sujeitoProgramador'}></Certificate>
+        </Fade>
+        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+          <Certificate certificate={'cursoEmVideo'}></Certificate>
+        </Fade>
+        <Fade duration={2500} fraction={0.6} triggerOnce={true}>
+          <Certificate certificate={'comingSoon'}></Certificate>
+        </Fade>
       </CerticatesContainer>
     </AboutContainer>
   )

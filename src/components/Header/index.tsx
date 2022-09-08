@@ -11,7 +11,7 @@ export function Header() {
           <a className="active" href="">
             Home
           </a>
-          <a href="">Sobre</a>
+          <a href="">Sobre </a>
           <a href="">Projetos</a>
           <a href="">Contato</a>
         </nav>
