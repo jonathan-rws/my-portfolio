@@ -8,7 +8,7 @@ import { IoIosRocket } from 'react-icons/io'
 
 export function Projects() {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <h1>Projetos:</h1>
       <p>
         Eu tenho trabalhado em vários projetos de desenvolvimento front-end

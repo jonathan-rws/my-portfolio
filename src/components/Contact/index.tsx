@@ -12,7 +12,7 @@ import {
 
 export function Contact() {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <FollowContainer>
         <Fade>
           <h1>Siga-me</h1>

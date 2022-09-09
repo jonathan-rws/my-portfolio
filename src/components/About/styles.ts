@@ -6,7 +6,7 @@ import curoEmVideoImg from '../../assets/cursoEmVideo.png'
 import comingSoonimg from '../../assets/comingSoon.webp'
 
 export const AboutContainer = styled.section`
-  margin-top: 3rem;
+  margin-top: 2rem;
   h1 {
     font-weight: 600;
     font-size: 2rem;

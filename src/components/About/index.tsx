@@ -8,7 +8,7 @@ import {
 
 export function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <h1>Sobre:</h1>
       <p>
         {
