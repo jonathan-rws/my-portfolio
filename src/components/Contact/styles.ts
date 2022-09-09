@@ -105,5 +105,16 @@ export const FormContainer = styled.form`
     &:hover {
       filter: opacity(0.7);
     }
+    @keyframes spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    svg.spinner {
+      animation: spinner 1.5s linear infinite;
+    }
   }
 `
