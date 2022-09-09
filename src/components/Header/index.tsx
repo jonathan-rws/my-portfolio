@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
+import { FiX, FiMenu } from 'react-icons/fi'
 import { Sidebar } from '../Sidebar'
 
 import { HeaderContainer, HeaderContent } from './styles'
@@ -7,15 +7,12 @@ import { HeaderContainer, HeaderContent } from './styles'
 export function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-  function closeSidebar() {
-    setIsSidebarOpen(false)
-  }
-  function openSidebar() {
-    setIsSidebarOpen(true)
+  function hadleChangeSidebar() {
+    setIsSidebarOpen((status) => !status)
   }
 
   return (
-    <HeaderContainer>
+    <HeaderContainer isOpen={isSidebarOpen}>
       <HeaderContent>
         <strong>Jonathan Martins</strong>
         <nav>
@@ -23,11 +20,12 @@ export function Header() {
           <a href="#projects">Projetos</a>
           <a href="#contact">Contato</a>
         </nav>
-        <button onClick={openSidebar}>
-          <FaBars size={26} />
+        <button onClick={hadleChangeSidebar}>
+          {!isSidebarOpen ? <FiMenu size={26} /> : <FiX size={26} />}
         </button>
       </HeaderContent>
-      <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+
+      <Sidebar isOpen={isSidebarOpen} />
     </HeaderContainer>
   )
 }

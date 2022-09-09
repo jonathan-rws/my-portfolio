@@ -3,8 +3,7 @@ import { Fade } from 'react-awesome-reveal'
 import coffeeDeliveryImg from '../../assets/projects/coffee-delivery.png'
 import portfolioImg from '../../assets/projects/portfolio.png'
 import todoImg from '../../assets/projects/todo.png'
-import { FaGithub } from 'react-icons/fa'
-import { IoIosRocket } from 'react-icons/io'
+import { FiGithub, FiGlobe } from 'react-icons/fi'
 
 export function Projects() {
   return (
@@ -26,11 +25,11 @@ export function Projects() {
             </span>
             <footer>
               <button>
-                <IoIosRocket size={20} />
+                <FiGlobe size={20} />
                 Live
               </button>
               <button>
-                <FaGithub size={20} />
+                <FiGithub size={20} />
                 Github
               </button>
             </footer>
@@ -46,11 +45,11 @@ export function Projects() {
             </span>
             <footer>
               <button>
-                <IoIosRocket size={20} />
+                <FiGlobe size={20} />
                 Live
               </button>
               <button>
-                <FaGithub size={20} />
+                <FiGithub size={20} />
                 Github
               </button>
             </footer>
@@ -66,11 +65,11 @@ export function Projects() {
             </span>
             <footer>
               <button>
-                <IoIosRocket size={20} />
+                <FiGlobe size={20} />
                 Live
               </button>
               <button>
-                <FaGithub size={20} />
+                <FiGithub size={20} />
                 Github
               </button>
             </footer>
