@@ -15,7 +15,7 @@ export const SidebarContainer = styled.div`
   transition: max-height 0.5s ease-in-out;
   border-bottom-left-radius: 10px;
   &.opened {
-    max-height: 1000px;
+    max-height: 100%;
   }
   &.closed {
   }

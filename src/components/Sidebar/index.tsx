@@ -10,15 +10,15 @@ export function Sidebar({ isOpen }: SidebarProps) {
     <SidebarContainer className={isOpen ? 'opened' : 'closed'}>
       <SidebarContent>
         <h1>Navegaçao</h1>
-        <a href="">
+        <a href="#about">
           <FiUser />
           Sobre
         </a>
-        <a href="">
+        <a href="#projects">
           <FiTerminal />
           Projetos
         </a>
-        <a href="">
+        <a href="#contact">
           <FiMail />
           Contato
         </a>
