@@ -1,3 +1,7 @@
+import { FormEvent, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.css'
 import { ContactContainer, FollowContainer, FormContainer } from './styles'
 import { Fade } from 'react-awesome-reveal'
 import { api } from '../api/axios'
@@ -10,7 +14,6 @@ import {
   FaWhatsappSquare,
   FaPaperPlane,
 } from 'react-icons/fa'
-import { FormEvent, useState } from 'react'
 
 export function Contact() {
   const [isLoading, setIsLoading] = useState(false)
@@ -18,22 +21,23 @@ export function Contact() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event: FormEvent) {
     event.preventDefault()
     setIsLoading(true)
-    console.log(event)
 
-    api
-      .post('5cf4127c75235deb4c332fb50dedf9f3 ', {
+    await api
+      .post('5cf4127c75235deb4c332fb50dedf9f3', {
         name,
         email,
         message,
       })
       .then((res) => {
+        console.log(res)
         setIsLoading(false)
         setName('')
         setEmail('')
         setMessage('')
+        toast.dark('Mensagem enviada com sucesso')
       })
       .catch((err) => console.log(err))
   }
@@ -57,6 +61,7 @@ export function Contact() {
         <Fade>
           <span>Contato</span>
           <input
+            required
             name="name"
             type="text"
             placeholder="Nome:"
@@ -64,6 +69,7 @@ export function Contact() {
             onChange={(e) => setName(e.target.value)}
           />
           <input
+            required
             name="email"
             type="email"
             placeholder="Email:"
@@ -72,6 +78,7 @@ export function Contact() {
           />
 
           <textarea
+            required
             name="message"
             id="message"
             placeholder="Mensagem:"
@@ -87,6 +94,17 @@ export function Contact() {
               <FaPaperPlane size={20} /> Enviar
             </button>
           )}
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </Fade>
       </FormContainer>
     </ContactContainer>
