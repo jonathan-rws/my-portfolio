@@ -24,14 +24,14 @@ export function Projects() {
               cadastro de endereços.
             </span>
             <footer>
-              <button>
+              <a href="https://desafio-02-coffee-delivery.vercel.app/">
                 <FiGlobe size={20} />
                 Live
-              </button>
-              <button>
+              </a>
+              <a href="https://github.com/jonathan-rws/desafio-02-coffee-delivery">
                 <FiGithub size={20} />
                 Github
-              </button>
+              </a>
             </footer>
           </CardProject>
         </Fade>
@@ -44,14 +44,14 @@ export function Projects() {
               conquistar empregadores.
             </span>
             <footer>
-              <button>
+              <a href="https://jonathanportifolio.vercel.app/">
                 <FiGlobe size={20} />
                 Live
-              </button>
-              <button>
+              </a>
+              <a href="https://github.com/jonathan-rws/my-portfolio">
                 <FiGithub size={20} />
                 Github
-              </button>
+              </a>
             </footer>
           </CardProject>
         </Fade>
@@ -64,14 +64,14 @@ export function Projects() {
               concluída quando efetuada.
             </span>
             <footer>
-              <button>
+              <a href="https://desafio-01-todolist.vercel.app/">
                 <FiGlobe size={20} />
                 Live
-              </button>
-              <button>
+              </a>
+              <a href="https://github.com/jonathan-rws/desafio-01-todolist">
                 <FiGithub size={20} />
                 Github
-              </button>
+              </a>
             </footer>
           </CardProject>
         </Fade>

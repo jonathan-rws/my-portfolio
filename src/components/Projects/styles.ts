@@ -66,7 +66,7 @@ export const CardProject = styled.div`
     gap: 1rem;
     margin-top: auto;
 
-    button {
+    a {
       flex: 1;
       display: flex;
       align-items: center;
@@ -82,7 +82,7 @@ export const CardProject = styled.div`
       line-height: 24px;
       transition: filter 0.2s;
       cursor: pointer;
-      + button {
+      + a {
         background: transparent;
         border: 2px solid ${(props) => props.theme.primary};
       }

@@ -10,11 +10,11 @@ export function Banner() {
         <strong>Jonathan Martins</strong>
         <p>Estudante de desenvolvimento web front-end</p>
         <div>
-          <Button>
+          <Button href="#about">
             <FiUser size={20} />
             Sobre
           </Button>
-          <Button>
+          <Button href="#projects">
             <FiTerminal size={20} />
             Projetos
           </Button>
