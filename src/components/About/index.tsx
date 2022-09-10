@@ -12,7 +12,7 @@ export function About() {
       <h1>Sobre:</h1>
       <p>
         {
-          'Oi, meu nome é Jonathan Martins seja bem vindo(a) ao meu portifólio! Sou um estudante de desenvolvimento web que busca usar das melhores praticas do mercado e o aprendizado constante de ferramentas para resolver os mais complexos problemas do dia-a-dia. '
+          'Oi, meu nome é Jonathan Martins seja bem vindo(a) ao meu portfólio! Sou um estudante de desenvolvimento web que busca usar das melhores praticas do mercado e o aprendizado constante de ferramentas para resolver os mais complexos problemas do dia-a-dia. '
         }
       </p>
       <ExperienceTimeContainer>

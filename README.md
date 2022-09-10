@@ -1,6 +1,6 @@
 ![Jonathan Martins](https://github.com/jonathan-rws.png)
 
-Portifólio utilizado para demontrar minhas skills para possíveis recrutadores.
+Portfólio utilizado para demontrar minhas skills para possíveis recrutadores.
 
 ## O que é utilizado?
 

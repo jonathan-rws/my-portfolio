@@ -38,7 +38,7 @@ export function Projects() {
         <Fade duration={2500} fraction={0.5} triggerOnce={true}>
           <CardProject>
             <img src={portfolioImg} alt="" />
-            <strong>Portifólio</strong>
+            <strong>Portfólio</strong>
             <span>
               Página criada para demonstrar trabalhos que eu mesmo desenvolvi e
               conquistar empregadores.
